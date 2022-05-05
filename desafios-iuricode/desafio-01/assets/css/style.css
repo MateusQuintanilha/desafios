@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 body {
     background: hsla(210, 20%, 96%, 1);
@@ -14,6 +15,7 @@ header {
     max-width: 901px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .header-menu {
     display: flex;
@@ -55,7 +57,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 .post {
     background: #FFFFFF;
