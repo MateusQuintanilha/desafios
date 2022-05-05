@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background: hsla(0, 0%, 98%, 1);
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+.header-top-bar,
+.header-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-top-bar {
+    background: hsla(0, 0%, 9%, 1);
+}
+.header-top-bar span {
+    font: 500 16px/31px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 98%, 1);
+}
+.header-logo {
+    background: hsla(0, 0%, 98%, 1);
+}
+.header-logo h1{
+    font: 600 24px/47px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 9%, 1);
+}
+.banner-container {
+    position: relative;
+    background-image: url('../img/banner/banner-high-og-wmns-twist-feminino-grande.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 378px;
+}
+.banner-opacity {
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 9%, 1);
+    opacity: 0.6;
+}
+.banner-content {
+    position: absolute;
+    inset: 129px 0 0 100px;
+}
+.banner-content h2 {
+    font: 700 32px/39px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 98%, 1);
+}
+.banner-content p {
+    margin-top: 19px;
+    max-width: 460px;
+    font: 500 18px/35px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 98%, 1);
+}
+.products-featured {
+    padding: 60px 20px 100px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.products-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products-title h2 {
+    font: 600 32px/63px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 9%, 1);
+}
+.products-title span {
+    font: 500 18px/35px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 28%, 1);
+
+}
+.products-container {
+    margin-top: 60px;
+    width: 100%;
+    gap: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsla(330, 5%, 92%, 1);
+}
+.product img {
+    width: 250px;
+}
+footer {
+    height: 60px;
+    background: hsla(0, 0%, 9%, 1);
+    font: 500 18px/35px 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 98%, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
