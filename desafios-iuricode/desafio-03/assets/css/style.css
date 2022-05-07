@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header {
+    background: hsla(243, 100%, 92%, 1);
+    padding: 77px 100px 120px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content {
+    max-width: 375px;
+
+}
+.header-content h1 {
+    margin-top: 60px;
+    max-width: 340px;
+    font: 400 36px/47px 'Merriweather', serif;
+    color: hsla(0, 0%, 17%, 1);
+
+}
+.header-content p {
+    margin-top: 18px;
+    font: 400 19px/32px 'Lato', sans-serif;
+    color: hsla(0, 0%, 33%, 1);
+}
+.header-image {
+    margin-left: 20px;
+    max-width: 500px;
+}
+.button {
+    margin-top: 45px;
+    width: 155px;
+    height: 50px;
+    font: 400 20px/24px 'Lato', sans-serif;
+    color: hsla(0, 0%, 100%, 1);
+    background: hsla(243, 100%, 69%, 1);
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    border-radius: 5px;
+}
+.button:hover {
+    background: hsla(243, 90%, 69%, 1);
+}
+
+.cards-container {
+    padding: 150px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 68px 110px;
+}
+.card {
+    width: 340px;
+    height: 423px;
+    margin: 0 auto;
+}
+.card-spotlight {
+    height: 222px;
+}
+.card-content {
+    padding: 24px;
+    background: hsla(0, 0%, 100%, 1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.card-content h2 {
+    font: 700 24px/30px 'Merriweather', serif;
+    color: hsla(0, 0%, 17%, 1);
+}
+.card-content p {
+    margin-top: 26px;
+    max-width: 282px;
+    font: 400 18px/30px 'Lato', sans-serif;
+    color: hsla(0, 0%, 33%, 1);
+}
+
+.card-01 {
+    background: hsla(0, 100%, 69%, 1);
+}
+.card-02 {
+    background: hsla(187, 100%, 69%, 1);
+}
+.card-03 {
+    background: hsla(295, 100%, 69%, 1);
+}
+.card-04 {
+    background: hsla(126, 100%, 69%, 1);
+}
+.card-05 {
+    background: hsla(47, 100%, 69%, 1);
+}
+.card-06 {
+    background: hsla(241, 100%, 69%, 1);
+}
+.contact-container {
+    padding: 85px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsla(243, 100%, 92%, 1);
+}
+.contact-title h2 {
+    font: 400 32px/40px 'Merriweather', serif;
+    color: hsla(0, 0%, 17%, 1);
+}
+.contact-container form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-container input {
+    width: 470px;
+    height: 65px;
+    padding-left: 15px;
+    background: hsla(0, 0%, 100%, 1);
+    border-radius: 6px;
+    font: 400 18px/21.6px 'Lato', sans-serif;
+    color: hsla(206, 3%, 45%, 0.74);
+    outline: none;
+}
+.contact-container textarea {
+    width: 470px;
+    height: 165px;
+    padding: 21px 0 0 15px;
+    background: hsla(0, 0%, 100%, 1);
+    border-radius: 6px;
+    resize: none;
+    font: 400 18px/21.6px 'Lato', sans-serif;
+    color: hsla(206, 3%, 45%, 0.74);
+    outline: none;
+}
+.contact-container .button {
+    margin-top: 15px;
+    width: 470px;
+    height: 50px;
+}
