@@ -64,13 +64,35 @@ section {
     display: flex;
     justify-content: space-between;
 }
-.remember-field .remember {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 11px;
+.remember {
+    position: relative;
+}
+.remember input[type="checkbox"] {
+    display: none;
+}
+.remember input + label::before,
+.remember input + label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #E8E8E8;
+    border-radius: 100%;
+}
+.remember input:checked + label::after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    background: rgb(201, 200, 200);
+    border: 1px solid rgb(201, 200, 200);
 }
 .remember-field .remember label {
     font: 400 14px/16.8px 'Lato', sans-serif;
+    margin-left: 30px;
 }
 .remember-field a {
     font: 400 14px/16.8px 'Lato', sans-serif;
