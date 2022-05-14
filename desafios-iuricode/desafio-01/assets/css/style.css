@@ -100,3 +100,48 @@ nav {
     font: 400 1.125rem/2rem var(--font-text);
     color: var(--color-gray);
 }
+
+/* Responsive */
+@media screen and (max-width: 680px) {
+    nav {
+        padding: 3rem 1.25rem;
+    }
+    .menu-top-bar  a {
+        font: 400 1.125rem/1.40625rem var(--font-button);
+    }
+    .menu-bar-search {
+        margin-top: 2.5625rem;
+        height: 2.5rem;
+    }
+    .menu-bar-search input {
+        padding: 0 2.375rem;
+        font: 400 0.875rem/1.05875rem var(--font-button);
+    }
+    .menu-bar-search input::placeholder {
+        font: 400 0.875rem/1.05875rem var(--font-search);
+    }
+    .menu-bar-search img {
+        inset: 12.19px 0 0 9.19px;
+        width: 15.63px;
+    }
+    .posts-container {
+        padding: 3.125rem 1.25rem;
+        gap: 1.5625rem;
+    }
+    .post {
+        padding: 0.9375rem;
+    }
+    .post-time {
+        font: 400 0.875rem/1.09375rem var(--font-text);
+    }
+    .post-content {
+        margin-top: 1.75rem;
+    }
+    .post-title {
+        font: 400 1.125rem/1.40625rem var(--font-title);
+    }
+    .post-paragraph {
+        margin-top: 0.5625rem;
+        font: 400 0.875rem/1.625rem var(--font-text);
+    }
+}
