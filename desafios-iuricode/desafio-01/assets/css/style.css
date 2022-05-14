@@ -1,88 +1,102 @@
 * {
     margin: 0;
-    padding: 0;
     border: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --color-background-header: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    --color-background-search: #FFFFFF33;
+    --color-light: #FFFFFF;
+    --color-light-200: #F3F5F7;
+    --color-gray: #717171;
+    --color-gray-dark: #1A202C;
+
+    --font-button: 'Lexend Deca', sans-serif;
+    --font-search: 'Inter', sans-serif;
+    --font-title: 'Lexend Deca', sans-serif;
+    --font-text: 'Lexend Deca', sans-serif;
+}
 body {
-    background: hsla(210, 20%, 96%, 1);
+    background: var(--color-light-200);
 }
 header {
-    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
-    padding: 41px 0;
+    background: var(--color-background-header);
 }
-.container {
-    max-width: 901px;
-    width: 100%;
+nav {
+    padding: 2.5625rem 1.25rem;
+    max-width: 56.25rem;
     margin: 0 auto;
-    padding: 0 20px;
 }
-.header-menu {
+.menu-top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
 }
-.header-menu li a {
-    text-decoration: none;
-    font: 400 24px/30px 'Lexend Deca', sans-serif;
-    color: hsla(0, 0%, 100%, 1);
+.menu-top-bar  a {
+    text-decoration:  none;
+    font: 400 1.5rem/1.875rem var(--font-button);
+    color: var(--color-light);
 }
-.header-search-bar {
-    position: relative;
-    margin-top: 73px;
-    max-width: 900px;
+.menu-bar-search {
+    margin-top: 4.5625rem;
     width: 100%;
-    height: 65px;
+    height: 4.0625rem;
+    position: relative;
+
 }
-.header-search-bar input {
+.menu-bar-search input {
     width: 100%;
     height: 100%;
-    outline: none;
-    padding: 0 64px;
-    background: hsla(0, 0%, 100%, 0.2);
+    padding: 0 4rem;
+    outline: transparent;
+    font: 400 1.125rem/1.36125rem var(--font-search);
+    color: var(--color-light);
+    background: var(--color-background-search);
     border-radius: 5px;
 }
-.header-search-bar input,
-.header-search-bar input::placeholder {
-    font: 400 18px/21.78px 'Inter', sans-serif;
-    color: hsla(0, 0%, 100%, 1);
+.menu-bar-search input::placeholder {
+    font: 400 1.125rem/1.36125rem var(--font-search);
+    color: var(--color-light);
     opacity: 0.5;
 }
-.header-search-bar .icon-search {
+.menu-bar-search img {
     position: absolute;
-    inset: 18px 0 17px 17px;
+    inset: 18px 0 0 17px;
 }
-.posts {
+.posts-container {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    padding: 6.25rem 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 100px 20px;
+    gap: 3.125rem;
 }
 .post {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
-    border-radius: 5px;
-    padding: 25px;
+    padding: 1.5625rem;
+    background: var(--color-light);
+    box-shadow: 0px 0px 0.625rem rgba(19, 19, 31, 0.05);
+    border-radius: 0.3125rem;
 }
-.post-top-bar {
+.post-status-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.post-top-bar span {
-    font: 400 16px/20px 'Lexend Deca', sans-serif;
-    color: hsla(0, 0%, 44%, 1);
-
+.post-time {
+    font: 400 1rem/1.25rem var(--font-text);
+    color: var(--color-gray);
 }
 .post-content {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
-.post-content h2 {
-    font: 400 26px/32.5px 'Lexend Deca', sans-serif;
-    color: hsla(220, 26%, 14%, 1);
+.post-title {
+    font: 400 1.625rem/2rem var(--font-title);
+    color: var(--color-gray-dark);
 }
-.post-content p {
-    font: 400 18px/32px 'Lexend Deca', sans-serif;
-    color: hsla(0, 0%, 44%, 1);
+.post-paragraph {
+    margin-top: 0.5rem;
+    font: 400 1.125rem/2rem var(--font-text);
+    color: var(--color-gray);
 }
