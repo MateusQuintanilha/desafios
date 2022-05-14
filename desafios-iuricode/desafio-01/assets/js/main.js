@@ -25,20 +25,20 @@ const postagens = [
     },
 ];
 
-const containerPosts = document.querySelector('.posts');
+const containerPosts = document.querySelector('.posts-container');
 
 postagens.forEach(post => {
 containerPosts.innerHTML += `
     <article class="post">
-        <section class="post-top-bar">
-            <span>${post.data}</span>
+        <section class="post-status-bar">
+            <span class="post-time">${post.data}</span>
             <div class="post-icon">
                 <img src="assets/img/icons/icon-heart.svg" alt="Ícone de curtida">
             </div>
         </section>
         <section class="post-content">
-            <h2>${post.titulo}</h2>
-            <p>${post.texto}</p>
+            <h2 class="post-title">${post.titulo}</h2>
+            <p class="post-paragraph">${post.texto}</p>
         </section>
     </article>
 `
