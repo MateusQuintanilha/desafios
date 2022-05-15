@@ -108,3 +108,49 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 680px) {
+    .banner {
+        background: linear-gradient(#18181899, #18181899), url('../img/banner/banner-high-og-wmns-twist-feminino-pequeno.png');
+        background-size: cover;
+        padding-top: 7.625rem;
+    }
+    
+    .banner-content {
+        margin-left: 1.25rem;
+        max-width: 23.4375rem;
+    }
+    .banner-title {
+        font: 700 1.75rem/2.133125rem var(--font-title);
+    }
+    .banner-text {
+        margin-top: 0.75rem;
+        font: 600 1rem/1.8rem var(--font-text);
+    }
+    .products-container {
+        padding: 3.125rem 1.25rem;
+    }
+    .products-title {
+        font: 600 1.75rem/3.433125rem var(--font-title);
+    }
+    .products-text {
+        margin-top: 5px;
+        font: 500 1rem/1.8rem var(--font-text);
+    }
+    .products {
+        gap: 1.875rem;
+    }
+    .product-single {
+        padding: 4.75rem 3.875rem;
+        background: var(--color-white-200);
+    }
+    .product-single img {
+        max-width: 250px;
+    }
+    footer {
+        font: 500 1.125rem/2.206875rem var(--font-text);
+    }
+    
+}
