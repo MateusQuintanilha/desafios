@@ -169,3 +169,117 @@ a {
 .job-title, .name-course {
     font: 400 12px/15px var(--title-font);
 }
+
+
+/*======= MAIN =======*/
+.my-projects, .recent-projects {
+    display: flex;
+    align-items: center;
+}
+
+.my-projects {
+    padding: 30px;
+    justify-content: space-between;
+}
+.my-projects h2 {
+    font: 700 20px/25px var(--title-font);
+}
+.my-projects a {
+    font: 400 14px/18px var(--title-font);
+    color: var(--text-color);
+}
+
+.recent-projects {
+    gap: 30px;
+}
+.project {
+    flex-direction: column;
+    padding: 30px;
+}
+.project .top-bar {
+    display: flex;
+    gap: 1rem;
+}
+.project .top-bar .project-title {
+    font: 700 16px/20px var(--title-font);
+}
+.project-text {
+    margin-top: 20px;
+    font: 400 14px/20px var(--title-font);
+}
+.project-footer {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-footer .git-container {
+    display: flex;
+    gap: 16px;
+}
+.project-footer .star,
+.project-footer .branch,
+.project-footer .technologie {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.project-footer .star img,
+.project-footer .branch img {
+    width: 20px;
+}
+.project-footer .star span,
+.project-footer .branch span {
+    font: 400 14px/18px var(--title-font);
+}
+.technologie-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+}
+
+.recent-posts {
+    padding: 30px;
+}
+.recent-posts h2 {
+    font: 700 20px/25px var(--title-font);
+}
+
+.post {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.post-img img {
+    width: 128px;
+}
+.post-content {
+    margin-left: 20px;
+}
+.post-content .title h2 {
+    font: 700 18px/23px var(--title-font);
+}
+.post-content .date {
+    font: 400 14px/18px var(--title-font);
+}
+.post-content .content {
+    margin-top: 28px;
+    font: 400 16px/20px var(--title-font);
+}
+.post-content .footer {
+    margin-top: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font: 400 14px/18px var(--title-font);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
