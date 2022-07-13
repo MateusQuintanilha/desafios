@@ -1,139 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <aside>
-        <div class="profile">
-            <div class="user-img">
-                <img src="assets/img/profile/user.png" alt="">
-            </div>
-            <div class="user-info">
-                <span class="user-name">João Inácio Neto</span>
-                <span class="user-occupation ">Full Stack Developer</span>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Portfólio</title>
+    </head>
+    <body>
+        <div class="container">
+            <aside id="aside-bar">
+                <section class="profile">
+                    <div class="user-img">
+                        <img src="assets/img/profile/user.png" alt="">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">João Inácio Neto</div>
+                        <div class="user-occupation">Full Stack Developer</div>
+                    </div>
+                </section>
+                <section class="social-media">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/map-pin.svg" alt="">
+                                <span>Brasil</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/briefcase.svg" alt="">
+                                <span>Rocketseat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/github.svg" alt="">
+                                <span>birobirobiro</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/linkedin.svg" alt="">
+                                <span>joao-inacio-neto</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/twitter.svg" alt="">
+                                <span>birobirobiro</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/globe.svg" alt="">
+                                <span>https://birobirobiro.dev</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/img/icons/mail.svg" alt="">
+                                <span>birobirobiro.dev@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="technologies">
+                    <h2 class="title">Tecnologias</h2>
+                    <div class="hashtag">
+                        <button>javascript</button>
+                        <button>reactjs</button>
+                        <button>nodejs</button>
+                        <button>git</button>
+                        <button>github</button>
+                        <button>html</button>
+                        <button>css</button>
+                        <button>elixir</button>
+                        <button>react native</button>
+                    </div>
+                </section>
+                <section class="experiences">
+                    <h2 class="title">Experiências</h2>
+                    <ul class="list">
+                        <li>
+                            <ul>
+                                <li class="name-company">Rocketseat</li>
+                                <li class="period-company">2019 - Atualmente</li>
+                                <li class="job-title">Community Experience</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="name-company">Rocketseat</li>
+                                <li class="period-company">2019 - Atualmente</li>
+                                <li class="job-title">Community Experience</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="name-company">Rocketseat</li>
+                                <li class="period-company">2019 - Atualmente</li>
+                                <li class="job-title">Community Experience</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="name-company">Rocketseat</li>
+                                <li class="period-company">2019 - Atualmente</li>
+                                <li class="job-title">Community Experience</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="education">
+                    <h2 class="title">Educação</h2>
+                    <ul class="list">
+                        <li>
+                            <ul>
+                                <li class="name-school">Rocketseat</li>
+                                <li class="period-course">2019 - 2019</li>
+                                <li class="name-course">GoStack</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="name-school">Rocketseat</li>
+                                <li class="period-course">2019 - 2020</li>
+                                <li class="name-course">Ignite</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="name-school">Rocketseat</li>
+                                <li class="period-course">2019 - 2021</li>
+                                <li class="name-course">Ignite Pro</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="name-school">Rocketseat</li>
+                                <li class="period-course">2019 - 2021</li>
+                                <li class="name-course">Ignite Pro</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <main>
+                <section class="my-projects">
+                    <h2>My Projects</h2>
+                    <a href="#">Veja todos</a>
+                </section>
+                <section class="recent-projects">
+                    <div class="project">
+                        <div class="top-bar">
+                            <img src="assets/img/icons/folder.svg" alt="">
+                            <div class="project-title">my-onix</div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                                Consulte os códigos de erro que aparecem no painel do veículo Onix.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                           <div class="git-container">
+                            <div class="star">
+                                <img src="assets/img/icons/star.svg" alt="">
+                                <span>100</span>
+                            </div>
+                            <div class="branch">
+                                <img src="assets/img/icons/git-branch.svg" alt="">
+                                <span>100</span>
+                            </div>
+                           </div>
+                            <div class="technologie">
+                                <div class="technologie-circle"></div>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="top-bar">
+                            <img src="assets/img/icons/folder.svg" alt="">
+                            <div class="project-title">my-onix</div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                                Consulte os códigos de erro que aparecem no painel do veículo Onix.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="git-container">
+                             <div class="star">
+                                 <img src="assets/img/icons/star.svg" alt="">
+                                 <span>100</span>
+                             </div>
+                             <div class="branch">
+                                 <img src="assets/img/icons/git-branch.svg" alt="">
+                                 <span>100</span>
+                             </div>
+                            </div>
+                             <div class="technologie">
+                                 <div class="technologie-circle"></div>
+                                 <span>JavaScript</span>
+                             </div>
+                         </div>
+                    </div>
+                </section>
+                <section class="recent-posts">
+                    <h2>Recent Posts</h2>
+                </section>
+                <section class="post">
+                    <div class="post-img">
+                        <img src="assets/img/post/user.png" alt="">
+                    </div>
+                    <div class="post-content">
+                        <div class="title">
+                            <h2>Erro adb devices no Genymotion e Android Studio (React Native)</h2>
+                            <div class="date">2 anos atrás</div>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Erro adb devices no Genymotion e Android Studio (React Native
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <div class="post-hashtag">#react-native</div>
+                            <div class="post-hashtag">#genimotion</div>
+                            <div class="post-hashtag">#genimotion</div>
+                            <div class="post-hashtag">#genimotion</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-        <div class="links">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/map-pin.svg" alt="">
-                        <span>Brasil</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/briefcase.svg" alt="">
-                        <span>Rocketseat</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/github.svg" alt="">
-                        <span>birobirobiro</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/linkedin.svg" alt="">
-                        <span>joao-inacio-neto</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/twitter.svg" alt="">
-                        <span>birobirobiro</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/globe.svg" alt="">
-                        <span>https://birobirobiro.dev</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/icons/mail.svg" alt=""></a>
-                        <span>birobirobiro.dev@gmail.com</span>
-                </li>
-            </ul>
-        </div>
-        <div class="technologies">
-            <div class="title">
-                <h2>Tecnologias</h2>
-            </div>
-            <div class="technologies-container">
-                <span>javascript</span>
-                <span>reactjs</span>
-                <span>nodejs</span>
-                <span>git</span>
-                <span>github</span>
-                <span>html</span>
-                <span>css</span>
-                <span>elixir</span>
-                <span>react native</span>
-            </div>
-        </div>
-        <div class="experiences">
-            <div class="title">
-                <h2>Experiências</h2>
-            </div>
-            <ul class="list">
-                <li>
-                    <div class="name-company">Rocketseat</div>
-                    <div class="period">2019 - Atualmente</div>
-                    <div class="job-title">Community Experience</div>
-                </li>
-                <li>
-                    <div class="name-company">Rocketseat</div>
-                    <div class="period">2019 - Atualmente</div>
-                    <div class="job-title">Community Experience</div>
-                </li>
-                <li>
-                    <div class="name-company">Rocketseat</div>
-                    <div class="period">2019 - Atualmente</div>
-                    <div class="job-title">Community Experience</div>
-                </li>
-                <li>
-                    <div class="name-company">Rocketseat</div>
-                    <div class="period-company">2019 - Atualmente</div>
-                    <div class="job-title">Community Experience</div>
-                </li>
-            </ul>
-        </div>
-        <div class="education">
-            <div class="title">
-                <h2>Educação</h2>
-            </div>
-            <ul>
-                <li>
-                    <div class="name-school">Rocketseat</div>
-                    <div class="period-course">2019 - 2019</div>
-                    <div class="name-course">GoStack</div>
-                </li>
-                <li>
-                    <div class="name-school">Rocketseat</div>
-                    <div class="period-course">2019 - 2020</div>
-                    <div class="name-course">Ignite</div>
-                </li>
-                <li>
-                    <div class="name-school">Rocketseat</div>
-                    <div class="period-course">2019 - 2021</div>
-                    <div class="name-course">Ignite Pro</div>
-                </li>
-                <li>
-                    <div class="name-school">Rocketseat</div>
-                    <div class="period-course">2019 - 2021</div>
-                    <div class="name-course">Ignite Pro</div>
-                </li>
-            </ul>
-        </div>
-    </aside>
-</body>
+    </body>
 </html>
