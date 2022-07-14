@@ -170,7 +170,6 @@ a {
     font: 400 12px/15px var(--title-font);
 }
 
-
 /*======= MAIN =======*/
 .my-projects, .recent-projects {
     display: flex;
