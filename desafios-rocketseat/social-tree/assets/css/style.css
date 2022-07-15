@@ -1,0 +1,106 @@
+/*=============== GOOGLE FONTS =============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/*=============== VARIABLES CSS =============*/
+:root {
+    /*========== Colors =========*/
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+
+    /*========== Font and typography =========*/
+    --text-font: 'Merriweather Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+ul { 
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2.75rem;
+}
+main .container {
+    max-width: 20.37rem;
+    margin-top: 7.87rem;
+}
+main .container .avatar {
+    width: 12.5rem;
+    margin: 0 auto;
+}
+
+main .container .avatar > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    padding: 6px;
+}
+
+main .container .avatar > p {
+    margin-top: 1.37rem;
+
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--purple);
+}
+
+main .container nav,
+main .container nav ul,
+main .container nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container nav {
+    margin-top: 2.06rem;
+}
+
+main .container nav ul {
+    gap: 1rem;
+}
+
+main .container nav a {
+    width: 326px;
+    height: 49px;
+
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+main .container .social-links {
+    margin-top: 4.25rem;
+}
+
+main .container .social-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.81rem;
+}
