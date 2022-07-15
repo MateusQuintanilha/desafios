@@ -4,52 +4,22 @@
 /*=============== VARIABLES CSS =============*/
 :root {
     /*========== Colors =========*/
-    --body-bg-color: #22212C;
-    --text-color: #837E9F;
-    --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
+    --body-bg-color: rgb(34, 33, 44);
+    --bg-cards: hsl(244, 13%, 21%);
+    --bg-techs: hsl(327, 35%, 68%);
+
+    --text-color: hsl(249, 15%, 56%);
+    --title-color: hsl(249, 15%, 56%);
 
     /*========== Font and typography =========*/
-    --title-font: 'Merriweather Sans', sans-serif;
     --text-font: 'Merriweather Sans', sans-serif;
-
-    /*========== Margenes =========*/
-    --marge-0-25: .25rem;   /* 4px */
-    --marge-0-5: .50rem;    /* 8px */
-    --marge-1: 1rem;        /* 16px */
-    --marge-1-5: 1.5rem;    /* 24px */
-    --marge-1-8: 1.875rem;  /* 30px */
-    --marge-2-5: 2.5rem;    /* 40px */
-    --marge-3-7: 3.75rem;    /* 60px */
+    --title-font: 'Merriweather Sans', sans-serif;
 }
 
-/*==================== BASE ====================*/
-* {
+  * {
     margin: 0;
-    border: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    background: var(--body-bg-color);
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: var(--marge-2-5);
-    display: grid;
-    grid-template-columns: 348px 1fr;
-    column-gap: var(--marge-3-7);
-}
-
-aside, main {
-    display: flex;
-    flex-direction: column;
-    gap: var(--marge-1-8);
 }
 
 li {
@@ -60,225 +30,180 @@ a {
     text-decoration: none;
 }
 
-.profile, .social-media,.technologies, .experiences, .education,
-.my-projects, .project, .recent-posts, .post {
-    display: flex;
-    font-family: var(--text-font);
-    color: var(--text-color);
+body {
+    margin: 40px 40px 0 40px;
+    height: 100%;
+    
+    background-color: var(--body-bg-color);
+
+    display: grid;
+    grid-template-areas:
+        'aside main'
+        'footer footer';
+    gap: 20px 60px;
+    justify-content: center;
+    justify-items: center;
+}
+
+aside {
+    grid-area: aside;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 348px));
+    margin-left: 40px;
+
+    display: grid;
+    gap: 30px;
+}
+
+aside .profile, aside .social-links, aside .technologies, 
+aside .experiences, aside .education, main .my-projects,
+main .project, main .recent-posts, main .post {
     background: var(--bg-cards);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
 
-.profile, .user-img, .user-info {
+aside .profile {
+    width: 100%;
+    height: 18.25rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.technologies, .experiences, .education {
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px 20px;
+aside .profile .avatar {
+    width: 8rem;
+    margin-top: 2rem;
+
 }
 
-/*============ PORTFÓLIO ============*/
-/*======= ASIDE =======*/
-.profile {
-    height: 292px;
-    flex-direction: column;
-    justify-content: center;
-}
-.profile .user-img {
+aside .profile .avatar img {
+
     border: 2px solid #00FF00;
     border-radius: 50%;
 }
-.profile .user-img img {
-    width: 128px;
-}
-.profile .user-info {
-    margin-top: 29px;
-    flex-direction: column;
-}
-.profile .user-info .user-name {
-    font: 700 23px/29px var(--title-font);
-}
-.profile .user-info .user-occupation {
-    font: 300 13px/16px var(--title-font);
+
+aside .profile .profile-details {
+    margin-top: 1.81rem;
+
+    text-align: center;
 }
 
-.social-media {
-    padding: 30px 40px;
+aside .profile .profile-details h1 {
+    font: 700 1.43rem/1.81rem var(--title-font);
+    color: var(--title-color);
 }
-.social-media ul {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+
+aside .profile .profile-details p {
+    margin-top: 0.68rem;
+
+    font: 300 0.81rem/1rem var(--text-font);
+    color: var(--text-color);
 }
-.social-media a {
+
+aside .social-links {
+    padding: 1.87rem 2.5rem;
+}
+
+aside .social-links ul {
+    display: grid;
+    gap: 1.25rem;
+}
+
+aside .social-links ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
-    font: 400 13px/16px var(--title-font);
+
+    font: 400 0.81rem/1rem var(--text-font);
     color: var(--text-color);
 }
 
-.technologies .hashtag {
+aside .technologies {
+    padding: 1.87rem 1.25rem;
+}
+
+aside .technologies h2 {
+    font: 700 1.25rem/1.56rem var(--title-font);
+    color: var(--title-color);
+}
+
+aside .technologies .hashtag {
+    margin: 1.25rem 0 0 0.62rem;
+
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
-.technologies .hashtag button {
-    width: 86px;
-    height: 24px;
-    background: var(--bg-techs);
+
+aside .technologies .hashtag span {
+    width: 5.37rem;
+    padding: 7px 0;
     border-radius: 30px;
-    font: 700 10px/13px var(--title-font);
+
+    font: 700 0.62rem/0.78rem var(--text-font);
     text-transform: uppercase;
+    text-align: center;
+    
+    background: var(--bg-techs);
 }
 
-/* Sections Experiences and Education */
-.experiences .list, .education .list {
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+aside .experiences, 
+aside .education {
+    padding: 1.87rem 1.25rem;
+    height: 349px;
 }
-.title {
-    font: 700 20px/25px var(--title-font);
+
+aside .experiences > ul,
+aside .education > ul {
+    margin: 1.25rem 0 0 1.25rem;
 }
-.name-company, .name-school {
-    font: 700 14px/18px var(--title-font);
+
+aside .experiences > ul,
+aside .education > ul {
+    margin: 1.25rem 0 0 1.25rem;
 }
-.name-company::before, .name-school::before {
-    content: '';
-    display: inline-block;
+
+aside .experiences > ul > li,
+aside .education > ul > li {
+    margin-top: 10px;
+}
+
+
+aside .experiences h2,
+aside .education h2 {
+    font: 700 1.25rem/1.56rem var(--title-font);
+    color: var(--title-color);
+}
+
+aside .experiences .experiencie-list,
+aside .education .education-list {
     position: relative;
-    top: -3px;
-    right: 5px;
+
+    display: grid;
+    gap: 4px;
+}
+
+aside .experiences .experiencie-list li:first-child,
+aside .education .education-list li:first-child {
+    font: 700 0.87rem/1.125rem var(--text-font);
+    color: var(--text-color);
+}
+aside .experiences .experiencie-list li:first-child::before,
+aside .education .education-list li:first-child::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -6px;
     width: 4px;
     height: 4px;
+
     border-radius: 50%;
     background: var(--text-color);
-
-}
-.period-company, .period-course, .job-title, .name-course {
-    margin-top: 5px;
-    margin-left: 5px;
-    font: 300 12px/15px var(--title-font);
-}
-.job-title, .name-course {
-    font: 400 12px/15px var(--title-font);
 }
 
-/*======= MAIN =======*/
-.my-projects, .recent-projects {
-    display: flex;
-    align-items: center;
-}
-
-.my-projects {
-    padding: 30px;
-    justify-content: space-between;
-}
-.my-projects h2 {
-    font: 700 20px/25px var(--title-font);
-}
-.my-projects a {
-    font: 400 14px/18px var(--title-font);
+aside .experiences .experiencie-list li ~ li,
+aside .education .education-list li ~ li {
+    font: 300 0.75rem/0.93rem var(--text-font);
     color: var(--text-color);
-}
-
-.recent-projects {
-    gap: 30px;
-}
-.project {
-    flex-direction: column;
-    padding: 30px;
-}
-.project .top-bar {
-    display: flex;
-    gap: 1rem;
-}
-.project .top-bar .project-title {
-    font: 700 16px/20px var(--title-font);
-}
-.project-text {
-    margin-top: 20px;
-    font: 400 14px/20px var(--title-font);
-}
-.project-footer {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.project-footer .git-container {
-    display: flex;
-    gap: 16px;
-}
-.project-footer .star,
-.project-footer .branch,
-.project-footer .technologie {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-.project-footer .star img,
-.project-footer .branch img {
-    width: 20px;
-}
-.project-footer .star span,
-.project-footer .branch span {
-    font: 400 14px/18px var(--title-font);
-}
-.technologie-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #E7DE79;
-    border: 2px solid #837E9F;
-}
-
-.recent-posts {
-    padding: 30px;
-}
-.recent-posts h2 {
-    font: 700 20px/25px var(--title-font);
-}
-
-.post {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-}
-.post-img img {
-    width: 128px;
-}
-.post-content {
-    margin-left: 20px;
-}
-.post-content .title h2 {
-    font: 700 18px/23px var(--title-font);
-}
-.post-content .date {
-    font: 400 14px/18px var(--title-font);
-}
-.post-content .content {
-    margin-top: 28px;
-    font: 400 16px/20px var(--title-font);
-}
-.post-content .footer {
-    margin-top: 11px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    font: 400 14px/18px var(--title-font);
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 10px;
 }
