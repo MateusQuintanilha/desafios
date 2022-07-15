@@ -207,3 +207,167 @@ aside .education .education-list li ~ li {
     color: var(--text-color);
     margin-left: 10px;
 }
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 1.87rem;
+}
+
+main .my-projects {
+    padding: 1.87rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .my-projects h2 {
+    font: 700 1.25rem/1.56rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .my-projects a {
+    font: 400 0.87rem/1.12rem var(--text-font);
+    color: var(--text-color);
+}
+
+main .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.87rem;
+}
+
+main .project {
+    padding: 1.86rem;
+}
+
+main .project-header {
+    display: flex;
+    gap: 1rem;
+}
+
+main .project-header span {
+    font: 700 1rem/1.25rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .project-description {
+    margin-top: 1.37rem;
+
+    font: 400 0.87rem/1.25rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .project-footer {
+    margin-top: 1.87rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+main .project-footer .git-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+main .project-footer .git-container .star,
+main .project-footer .git-container .branch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font: 400 0.87rem/1.12rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .project-footer .project-language {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .project-footer .project-language div {
+    width: 15px;
+    height: 15px;
+    
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+    border-radius: 50%;
+}
+
+main .project-footer .project-language p {
+    font: 400 0.87rem/1.12rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .recent-posts {
+    padding: 1.87rem;
+}
+
+main .recent-posts h2 {
+    font: 700 1.25rem/1.56rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .post {
+    padding: 1.87rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+main .post .post-content h2{
+    font: 700 1.12rem/1.43rem var(--title-font);
+    color: var(--title-color);
+}
+
+main .post .post-content span {
+    font: 400 0.87rem/1.12rem var(--text-font);
+    color: var(--text-color);
+}
+
+main .post .post-content p {
+    margin-top: 1.75rem;
+
+    font: 400 1rem/1.25rem var(--text-font);
+    color: var(--text-color);
+}
+
+main .post .post-content .post-tags {
+    margin-top: 0.68rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main .post .post-content .post-tags span {
+    font: 400 0.87rem/1.12rem var(--text-font);
+    color: var(--text-color);
+}
+
+
+footer {
+    grid-area: footer;
+
+    width: 100%;
+    padding: 1.25rem;
+    margin-left: 5rem;
+
+    text-align: center;
+}
+
+footer a {
+    font: 400 0.87rem/1.25rem var(--text-font);
+    color: var(--text-color);
+}
