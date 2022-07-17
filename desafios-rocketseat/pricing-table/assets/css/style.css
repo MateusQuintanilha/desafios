@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+
+    --title-font: 'Open Sans', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--blue);
+}
+
+header h1 {
+    margin-top: 100px;
+    font: 700 3rem/4.06rem var(--title-font);
+    color: var(--page-background);
+}
+
+header p {
+    margin-top:  20px;
+
+    font: 400 1.12rem/1.56rem var(--text-font);
+    color: var(--page-background);
+}
+
+main {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background: var(--page-background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container {
+    position: absolute;
+    top: -140px;
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    width: 355px;
+    height: 470px;
+
+    padding: 30px;
+
+    background: var(--page-background);
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card .card-title h2 {
+    font: 600 1.12rem/1.56rem var(--title-font);
+    color: #1E2338;
+}
+
+.card .card-price {
+    margin-top: 20px;
+    color: #1E2338;
+}
+
+.card .card-price span:nth-child(1) {
+    font: 700 2.25rem/3.06rem var(--text-font);
+}
+
+.card .card-price span:nth-child(2) {
+    font: 700 1.12rem/1.56rem var(--text-font);
+}
+
+.card .card-price span:nth-child(3) {
+    font: 400 1.12rem/1.56rem var(--text-font);
+    color: #828799;
+}
+
+.card p {
+    margin-top: 10px;
+    font: 400 0.87rem/1.18rem var(--text-font);
+    color: #828799;
+}
+
+.card .card-list {
+    margin-top: 41px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .card-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font: 600 0.87rem/1.18rem var(--text-font);
+}
+
+.card > button {
+
+    padding: 12px 106.5px;
+
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    background: none;
+
+    font: 600 1.12rem/1.56rem var(--text-font);
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.card > button:hover {
+    background: var(--blue);
+    color: var(--page-background);
+}
+
+.card-popular {
+    height: 490px;
+
+    margin-top: -10px;
+    padding: 0;
+
+    background: var(--page-background);
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-popular .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 22px 20px 22px 30px;
+
+    border-radius: 8px 8px 0px 0px;
+    background: var(--yellow);
+}
+
+.card-popular .card-title h2 {
+    font: 600 1.25rem/1.68rem var(--title-font);
+}
+
+.card-popular .card-title .popular {
+    padding: 8px 24px;
+    font: 600 0.75rem/1rem var(--text-font);
+    color: var(--page-background);
+
+    border-radius: 40px;
+    background: var(--blue);
+}
+
+.card-popular.card-title .tag {
+    padding: 8px 24px;
+    font: 600 0.75rem/1rem var(--text-font);
+    color: var(--page-background);
+
+    border-radius: 40px;
+    background: var(--blue);
+}
+
+.card-popular .card-price {
+    margin: 10px 0 0 30px;
+}
+
+.card-popular .card-price span:nth-child(1) {
+    font: 700 2.37rem/3.25rem var(--text-font);
+}
+
+.card-popular .card-price span:nth-child(2) {
+    font: 700 1.25rem/1.68rem var(--text-font);
+}
+
+.card-popular p {
+    margin: 10px 0 0 30px;
+}
+
+.card-popular .card-list {
+    margin: 41px 0 0 30px;
+    gap: 17px;
+}
+
+.card-popular .card-list li {
+    font: 600 1rem/1.37rem var(--text-font);
+}
+
+.card-popular > button {
+    margin: 69px 30px 30px;
+    background: var(--blue);
+
+    font: 600 1.25rem/1.68rem var(--text-font);
+    color: var(--page-background);
+}
+
+.card-popular > button:hover {
+    background: var(--page-background);
+    color: var(--blue);
+}
