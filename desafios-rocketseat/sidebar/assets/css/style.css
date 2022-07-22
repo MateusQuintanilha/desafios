@@ -33,7 +33,6 @@ aside {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .header {
     margin: 24px 14px 0 29px;
     display: flex;
@@ -131,6 +130,72 @@ nav ul li a {
 .footer .info span:last-child {
     font: 400 12px/18px var(--text-font);
     color: var(--text-color)
+}
+
+.close {
+    max-width: 78px;
+}
+
+.close .header .logo {
+    display: none;
+}
+
+.close .search {
+    margin: 26px 14px 0 14px;
+    position: relative;
+    display: flex;
+}
+
+.close .search img {
+    position: absolute;
+    inset: 0;
+    margin: auto 0 auto 13px;
+}
+
+.close .search input {
+    width: 100%;
+    height: 50.92px;
+    padding-left: 50px;
+
+    background: var(--light-green);
+    border-radius: 12px;
+}
+
+.close .search input::placeholder {
+    display: none;
+}
+
+.close nav {
+    margin: 20px 0 0 27px;
+}
+
+.close nav ul {
+    display: grid;
+    gap: 34px;
+}
+
+.close nav ul li {
+    list-style: none;
+}
+
+.close nav ul li a span{
+    display: none;
+}
+
+.close .footer {
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--light-green);
+}
+
+.close .footer .profile {
+    display: none;
+}
+
+.close .footer > a {
+    margin: 0 auto;
 }
 
 main {
