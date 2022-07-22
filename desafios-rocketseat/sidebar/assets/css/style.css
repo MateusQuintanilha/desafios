@@ -94,6 +94,8 @@ nav ul li a {
     align-items: center;
     text-decoration: none;
     gap: 13px;
+
+    font: 400 15px/22px var(--text-font);
     color: var(--text-color);
 }
 
@@ -119,6 +121,16 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     color: var(--text-color);
+}
+
+.footer .info span:first-child {
+    font: 400 15px/22px var(--text-font);
+    color: var(--text-color)
+}
+
+.footer .info span:last-child {
+    font: 400 12px/18px var(--text-font);
+    color: var(--text-color)
 }
 
 main {
