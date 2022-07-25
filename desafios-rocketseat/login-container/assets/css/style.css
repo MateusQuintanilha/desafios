@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    background-color: var(--background);
+}
+
+main {
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .logo {
+    margin: 40px 0 0 40px;
+}
+
+main .flex-container {
+    width: 100%;
+    height: calc(100% - 33px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .form-container {
+    padding: 54px 118px;                                                  ;
+    background: var(--form-background);
+    color: var(--text-base);
+}
+
+main .form-container .title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+main .form-container form {
+    margin-top: 27px;
+}
+
+.form-container .input-field {
+    max-width: 335px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .input-container {
+    margin-top: 5px;
+    width: 100%;
+    height: 44px;
+    position: relative;
+}
+
+.form-container .input-field input {
+    width: 100%;
+    height: 100%;
+
+    background: none;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+.form-container .input-field img {
+    max-width: 20px;
+    position: absolute;
+}
+
+.form-container .icon-left {
+    top: 12px;
+    left: 12px;
+}
+.form-container .icon-right {
+    top: 12px;
+    right: 12px;
+}
+
+.form-container .checkbox-container {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-container form > button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.form-container form > p {
+    margin-top: 14px;
+    text-align: center;
+} 
+
+aside {
+    flex: 1;
+    height: 100%;
+    background-image: url(../img/side-image-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
